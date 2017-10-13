@@ -1,7 +1,7 @@
 {% set name = "astro-gala" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "83b319d1e05dbe0453671a3d28cadacb7f57bcf17e3f7e24441410b4cd1ff134" %}
+{% set hash_value = "c7164c830d02cce643439a9c9bda00241cc7a6d1f4701cbf3b5b95fe7be7e3ce" %}
 
 package:
   name: '{{ name|lower }}'
