@@ -1,6 +1,6 @@
 {% set name = "gala" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "63a844c6d6c6e6771426472b85a36624cb85e188d08b4c4593a672b4969a65d3" %}
+{% set version = "0.4.2" %}
+{% set sha256 = "522394fefdc9689360dca2199491d0cea9d89ba21a6899b9dc23f78de9d6e424" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,7 @@ requirements:
     - python
     - numpy x.x
     - numpy >=1.11
-    - networkx
+    - networkx <2.0
     - h5py
     - matplotlib
     - scipy
