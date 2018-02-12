@@ -21,11 +21,9 @@ requirements:
     - python
     - setuptools
     - cython
-    - numpy x.x
-    - numpy >=1.11
+    - numpy 1.11.x
   run:
     - python
-    - numpy x.x
     - numpy >=1.11
     - networkx <2.0
     - h5py
