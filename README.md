@@ -14,6 +14,18 @@ distributed under the open-source, 3-clause BSD license. It implements the
 algorithm described in Nunez-Iglesias et al., PLOS ONE, 2013.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gala-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gala-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/gala-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gala-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/gala-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/gala-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gala/badges/version.svg)](https://anaconda.org/conda-forge/gala)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gala/badges/downloads.svg)](https://anaconda.org/conda-forge/gala)
+
 Installing gala
 ===============
 
@@ -34,7 +46,6 @@ It is possible to list all of the versions of `gala` available on your platform 
 ```
 conda search gala --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -58,6 +69,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
@@ -70,18 +82,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gala-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gala-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/gala-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gala-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/gala-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/gala-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gala/badges/version.svg)](https://anaconda.org/conda-forge/gala)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gala/badges/downloads.svg)](https://anaconda.org/conda-forge/gala)
 
 
 Updating gala-feedstock
