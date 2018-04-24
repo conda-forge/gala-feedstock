@@ -17,14 +17,16 @@ gravitational potentials, numerical integration, and nonlinear dynamics.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/astro-gala-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/astro-gala-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/astro-gala-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/astro-gala-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/astro-gala-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/astro-gala-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/astro-gala-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/astro-gala-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/astro-gala/badges/version.svg)](https://anaconda.org/conda-forge/astro-gala)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/astro-gala/badges/downloads.svg)](https://anaconda.org/conda-forge/astro-gala)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-astro--gala-green.svg)](https://anaconda.org/conda-forge/astro-gala) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/astro-gala.svg)](https://anaconda.org/conda-forge/astro-gala) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/astro-gala.svg)](https://anaconda.org/conda-forge/astro-gala) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/astro-gala.svg)](https://anaconda.org/conda-forge/astro-gala) |
 
 Installing astro-gala
 =====================
@@ -69,6 +71,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
