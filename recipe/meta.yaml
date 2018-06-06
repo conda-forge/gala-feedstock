@@ -21,7 +21,7 @@ requirements:
     - python
     - setuptools
     - cython
-    - numpy 1.11.x
+    - numpy 1.11.*
   run:
     - python
     - numpy >=1.11
