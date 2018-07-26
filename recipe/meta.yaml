@@ -12,21 +12,23 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py < 35]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
     - cython
-    - numpy x.x
-    - numpy >=1.11
+    - numpy
+    - numpy
   run:
     - python
-    - numpy x.x
-    - numpy >=1.11
+    - {{ pin_compatible('numpy') }}
+    - {{ pin_compatible('numpy') }}
     - networkx
     - h5py
     - matplotlib
