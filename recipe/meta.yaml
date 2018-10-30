@@ -24,10 +24,8 @@ requirements:
     - setuptools
     - cython
     - numpy
-    - numpy
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - {{ pin_compatible('numpy') }}
     - networkx
     - h5py
