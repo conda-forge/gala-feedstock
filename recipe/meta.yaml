@@ -13,14 +13,16 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
-  script: python setup.py install --offline --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
+    {{ compiler('c') }}
+  host:
     - python
-    - setuptools
+    - pip
     - numpy
   run:
     - python
@@ -28,6 +30,7 @@ requirements:
     - six
     - pyyaml
     - scipy
+    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
