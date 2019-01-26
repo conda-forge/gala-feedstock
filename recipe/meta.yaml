@@ -13,21 +13,24 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 0
-  skip: true  # [win]
-  script: python setup.py install --offline --single-version-externally-managed --record=record.txt
+  number: 1000
+  skip: true  # [win or py2k]
+  script: "{{ PYTHON }} setup.py install --offline --single-version-externally-managed --record=record.txt"
 
 requirements:
   build:
-    - python
+    {{ compiler('c') }}
+  host:
+    - python <3.7
     - setuptools
     - numpy
   run:
-    - python
+    - python <3.7
     - astropy
     - six
     - pyyaml
     - scipy
+    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
