@@ -13,16 +13,16 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 1000
   skip: true  # [win]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: "{{ PYTHON }} setup.py install --offline --single-version-externally-managed --record=record.txt"
 
 requirements:
   build:
     {{ compiler('c') }}
   host:
     - python
-    - pip
+    - setuptools
     - numpy
   run:
     - python
