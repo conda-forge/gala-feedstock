@@ -1,7 +1,7 @@
 {% set name = "astro-gala" %}
-{% set version = "0.3" %}
+{% set version = "1.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "8ee891f7683327f7329dc373aed7769f2d03f23f335fc7f139c3dc9d7ee897c2" %}
+{% set hash_value = "063cf29ba6373eae170b30e8b281378a4d2c70f55676e2bc332fafb0332129f9" %}
 
 package:
   name: '{{ name|lower }}'
@@ -27,7 +27,7 @@ requirements:
   run:
     - python <3.7
     - astropy
-    - six
+    - gsl
     - pyyaml
     - scipy
     - {{ pin_compatible('numpy') }}
@@ -50,6 +50,7 @@ test:
     - gala.potential.hamiltonian
     - gala.potential.potential
     - gala.potential.potential.builtin
+    - gala.potential.scf
 
 about:
   home: http://gala.adrian.pw/
