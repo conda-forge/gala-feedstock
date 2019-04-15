@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About astro-gala
 ================
 
@@ -21,9 +17,27 @@ gravitational potentials, numerical integration, and nonlinear dynamics.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/astro-gala-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/astro-gala-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/astro-gala-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/astro-gala-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+
+<table>
+  <tr>
+    <td>Linux</td>
+    <td>
+      <img src="https://img.shields.io/badge/linux-disabled-lightgrey.svg" alt="linux disabled">
+    </td>
+  </tr>
+  <tr>
+    <td>OSX</td>
+    <td>
+      <img src="https://img.shields.io/badge/OSX-disabled-lightgrey.svg" alt="OSX disabled">
+    </td>
+  </tr>
+  <tr>
+    <td>Windows</td>
+    <td>
+      <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
