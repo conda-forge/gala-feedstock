@@ -14,19 +14,19 @@ source:
 
 build:
   number: 0
-  skip: true  # [win or py2k or py<35]
+  skip: true  # [win or py<35]
   script: "{{ PYTHON }} setup.py install --offline --single-version-externally-managed --record=record.txt"
 
 requirements:
   build:
     {{ compiler('c') }}
   host:
-    - python <3.7
+    - python
     - setuptools
     - numpy
     - gsl
   run:
-    - python <3.7
+    - python
     - astropy
     - gsl
     - pyyaml
