@@ -1,7 +1,7 @@
 {% set name = "astro-gala" %}
-{% set version = "1.0" %}
+{% set version = "1.0.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "063cf29ba6373eae170b30e8b281378a4d2c70f55676e2bc332fafb0332129f9" %}
+{% set hash_value = "efb5234100f18fa8820ba38f4aef7d642f7e8d7cd75ffcc1da23f0967b5bcee9" %}
 
 package:
   name: '{{ name|lower }}'
@@ -13,7 +13,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or py<35]
   script: "{{ PYTHON }} setup.py install --offline --single-version-externally-managed --record=record.txt"
 
