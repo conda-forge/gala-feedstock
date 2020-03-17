@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   skip: true  # [win or py<35]
-  script: {{ PYTHON }} setup.py install --offline --single-version-externally-managed --record=record.txt
+  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
   build: {{ compiler('c') }}
