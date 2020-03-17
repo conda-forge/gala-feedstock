@@ -1,30 +1,30 @@
 {% set name = "astro-gala" %}
-{% set version = "1.0.1" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "efb5234100f18fa8820ba38f4aef7d642f7e8d7cd75ffcc1da23f0967b5bcee9" %}
+{% set version = "1.1" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: 33a5ef65df572669b74ee3ac6aafcbecee85f233d2f770b84743d5671a9e0fe0
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or py<35]
-  script: "{{ PYTHON }} setup.py install --offline --single-version-externally-managed --record=record.txt"
+  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
-    {{ compiler('c') }}
+  build: {{ compiler('c') }}
   host:
     - python
+    - pip
     - setuptools
+    - setuptools_scm
     - numpy
     - gsl
+    - extension-helpers
   run:
     - python
     - astropy
