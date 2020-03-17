@@ -22,6 +22,7 @@ requirements:
     - setuptools
     - numpy
     - gsl
+    - extension_helpers
   run:
     - python
     - astropy
