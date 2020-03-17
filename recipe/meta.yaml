@@ -21,6 +21,7 @@ requirements:
     - python
     - pip
     - setuptools
+    - setuptools_scm
     - numpy
     - gsl
     - extension-helpers
