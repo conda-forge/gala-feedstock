@@ -25,6 +25,7 @@ requirements:
     - numpy
     - gsl
     - extension-helpers
+    - cython
   run:
     - python
     - astropy
