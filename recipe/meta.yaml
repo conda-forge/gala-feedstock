@@ -1,5 +1,5 @@
 {% set name = "astro-gala" %}
-{% set version = "1.1" %}
+{% set version = "1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 33a5ef65df572669b74ee3ac6aafcbecee85f233d2f770b84743d5671a9e0fe0
+  sha256: 24bc8333046ae05bd4dbb00512525033df128f07f33876d43e5ecbcc4b7d06e1
 
 build:
   number: 0
-  skip: true  # [win or py<35]
+  skip: true  # [win or py<36]
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -25,6 +25,7 @@ requirements:
     - numpy
     - gsl
     - extension-helpers
+    - cython
   run:
     - python
     - astropy
