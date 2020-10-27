@@ -1,6 +1,6 @@
 {% set name = "gala" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "63a844c6d6c6e6771426472b85a36624cb85e188d08b4c4593a672b4969a65d3" %}
+{% set version = "1.3" %}
+{% set sha256 = "38d3c4e4ad39fc1b061fd23832df0552a2640be2e468f2d3799349e0e0374d75" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [py < 35]
+  skip: true  # [py < 35]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -56,9 +56,10 @@ about:
   home: https://github.com/janelia-flyem/gala
   license_family: BSD
   license: BSD 3-clause
+  license_file: LICENSE
   # Uncomment line below when license.txt is added to PyPI source dist
   # license_file: license.txt
-  summary: 'Automatic segmentation of electron microscopy volumes'
+  summary: Automatic segmentation of electron microscopy volumes
 
   description: |
     Gala is a Python library for performing and evaluating image segmentation,
