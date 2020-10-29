@@ -69,4 +69,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - jni
+    - adrn
+    - mwcraig
+    - bsipocz
