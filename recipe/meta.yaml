@@ -1,4 +1,4 @@
-{% set name = "astro-gala" %}
+{% set name = "gala" %}
 {% set version = "1.2" %}
 
 package:
