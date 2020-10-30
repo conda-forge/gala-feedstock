@@ -1,13 +1,17 @@
 About gala
-================
+==========
 
 Home: http://gala.adrian.pw/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gala-feedstock/blob/master/LICENSE.txt)
 
 Summary: Galactic and gravitational dynamics in Python
+
+Development: https://github.com/adrn/gala
+
+Documentation: http://gala.adrian.pw
 
 Gala is a Python package for Galactic astronomy and gravitational
 dynamics. The bulk of the package centers around implementations of
@@ -19,79 +23,44 @@ Current build status
 
 
 <table>
-
+    
   <tr>
     <td>Azure</td>
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2723&branchName=master">
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3902&branchName=master">
             <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gala-feedstock?branchName=master">
           </a>
         </summary>
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_python3.6.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2723&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gala-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.6.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_python3.7.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2723&branchName=master">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3902&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gala-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.8.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2723&branchName=master">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3902&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gala-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.6.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2723&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gala-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.7.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2723&branchName=master">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3902&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gala-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.8.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2723&branchName=master">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3902&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gala-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.6.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2723&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gala-feedstock?branchName=master&jobName=win&configuration=win_64_python3.6.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2723&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gala-feedstock?branchName=master&jobName=win&configuration=win_64_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2723&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gala-feedstock?branchName=master&jobName=win&configuration=win_64_python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
@@ -107,10 +76,10 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-astro--gala-green.svg)](https://anaconda.org/conda-forge/gala) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gala.svg)](https://anaconda.org/conda-forge/gala) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gala.svg)](https://anaconda.org/conda-forge/gala) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gala.svg)](https://anaconda.org/conda-forge/gala) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gala-green.svg)](https://anaconda.org/conda-forge/gala) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gala.svg)](https://anaconda.org/conda-forge/gala) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gala.svg)](https://anaconda.org/conda-forge/gala) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gala.svg)](https://anaconda.org/conda-forge/gala) |
 
 Installing gala
-=====================
+===============
 
 Installing `gala` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
@@ -170,7 +139,7 @@ Terminology
 
 
 Updating gala-feedstock
-=============================
+=======================
 
 If you would like to improve the gala recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
