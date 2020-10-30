@@ -186,6 +186,5 @@ Feedstock Maintainers
 =====================
 
 * [@adrn](https://github.com/adrn/)
-* [@bsipocz](https://github.com/bsipocz/)
 * [@mwcraig](https://github.com/mwcraig/)
 
