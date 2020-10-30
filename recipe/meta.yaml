@@ -6,14 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 38d3c4e4ad39fc1b061fd23832df0552a2640be2e468f2d3799349e0e0374d75
 
 build:
   number: 0
   skip: true  # [win or py<37]
-  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install --no-deps -vv .
 
 requirements:
   build: {{ compiler('c') }}
