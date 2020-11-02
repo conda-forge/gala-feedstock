@@ -15,7 +15,9 @@ build:
   script: {{ PYTHON }} -m pip install --no-deps -vv .
 
 requirements:
-  build: {{ compiler('c') }}
+  build:
+    - {{ compiler('c') }} # [linux or osx]
+    - {{ compiler('m2w64_c') }} # [win]
   host:
     - python
     - pip
