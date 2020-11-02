@@ -16,8 +16,8 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}  # [linux or osx]
-    - {{ compiler('mingw32') }}  # [win]
+    - {{ compiler('c') }}  # [not win]
+    - {{ compiler('m2w64_c') }}  # [win]
   host:
     - python
     - pip
@@ -27,6 +27,8 @@ requirements:
     - gsl
     - extension-helpers
     - cython
+    - m2w64-toolchain  # [win]
+    - libpython  # [win]
   run:
     - python
     - astropy
@@ -34,6 +36,7 @@ requirements:
     - pyyaml
     - scipy
     - {{ pin_compatible('numpy') }}
+    - m2w64-gcc-libs  # [win]
 
 test:
   requires:
