@@ -11,11 +11,13 @@ source:
 
 build:
   number: 0
-  skip: true  # [win or py<37]
+  skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install --no-deps -vv .
 
 requirements:
-  build: {{ compiler('c') }}
+  build:
+    - {{ compiler('c') }}  # [not win]
+    - {{ compiler('m2w64_c') }}  # [win]
   host:
     - python
     - pip
@@ -25,6 +27,8 @@ requirements:
     - gsl
     - extension-helpers
     - cython
+    - m2w64-toolchain  # [win]
+    - libpython  # [win]
   run:
     - python
     - astropy
@@ -32,6 +36,7 @@ requirements:
     - pyyaml
     - scipy
     - {{ pin_compatible('numpy') }}
+    - m2w64-gcc-libs  # [win]
 
 test:
   requires:
