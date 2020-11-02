@@ -16,8 +16,8 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }} # [linux or osx]
-    - {{ compiler('m2w64_c') }} # [win]
+    - {{ compiler('c') }}  # [linux or osx]
+    - {{ compiler('m2w64_c') }}  # [win]
   host:
     - python
     - pip
