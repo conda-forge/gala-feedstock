@@ -45,7 +45,7 @@ test:
     - gala
     - gala.coordinates
     - gala.dynamics
-    - gala.dynamics._genfunc
+    - gala.dynamics.actionangle._genfunc
     - gala.dynamics.lyapunov
     - gala.dynamics.mockstream
     - gala.integrate
