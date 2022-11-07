@@ -1,5 +1,5 @@
 {% set name = "gala" %}
-{% set version = "1.5" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3534bb33590cb9cefcde97bb8db9b55bfd41862e18d03e98dbfc9ffb2232bbcb
+  sha256: 1866d0f7ac86070c94ab1e36c6358446bcaacee6360a098467c5cfd09b7fb4c8
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py<38 or win]
   script: {{ PYTHON }} -m pip install --no-deps -vv .
 
