@@ -1,5 +1,5 @@
 {% set name = "gala" %}
-{% set version = "1.6.1" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1866d0f7ac86070c94ab1e36c6358446bcaacee6360a098467c5cfd09b7fb4c8
+  sha256: 3c6cb02e9bbde182cc4acbbcef3718c83a334c7570f0efcb4c6c680f2c355839
 
 build:
   number: 0
