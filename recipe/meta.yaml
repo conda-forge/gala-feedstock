@@ -10,14 +10,16 @@ source:
   sha256: 913f479ec9cd3c43c4866d73604ab2243dc7dfc340290b9d628fb6d62ce2f7ad
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<39 or win]
   script: {{ PYTHON }} -m pip install --no-deps -vv .
 
 requirements:
   build:
     - {{ compiler('c') }}  # [not win]
+    - {{ stdlib("c") }}    # [not win]
     - {{ compiler('m2w64_c') }}  # [win]
+    - {{ stdlib("m2w64_c") }}    # [win]
   host:
     - python
     - pip
@@ -35,7 +37,6 @@ requirements:
     - gsl
     - pyyaml
     - scipy
-    - {{ pin_compatible('numpy') }}
     - m2w64-gcc-libs  # [win]
 
 test:
