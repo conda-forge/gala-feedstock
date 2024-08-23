@@ -29,6 +29,7 @@ requirements:
     - gsl
     - extension-helpers
     - cython
+    - packaging
     - m2w64-toolchain  # [win]
     - libpython  # [win]
   run:
@@ -37,6 +38,7 @@ requirements:
     - gsl
     - pyyaml
     - scipy
+    - packaging
     - {{ pin_compatible('numpy') }}
     - m2w64-gcc-libs  # [win]
 
