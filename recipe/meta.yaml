@@ -1,5 +1,5 @@
 {% set name = "gala" %}
-{% set version = "1.8.1" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 913f479ec9cd3c43c4866d73604ab2243dc7dfc340290b9d628fb6d62ce2f7ad
+  sha256: 76d81896acb8578628a9393d12b88456a07d0a56f1126a941ea2aa75678edc0e
 
 build:
   number: 0
@@ -17,7 +17,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}  # [not win]
+    - {{ stdlib("c") }}    # [not win]
     - {{ compiler('m2w64_c') }}  # [win]
+    - {{ stdlib("m2w64_c") }}    # [win]
   host:
     - python
     - pip
