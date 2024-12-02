@@ -208,4 +208,4 @@ Feedstock Maintainers
 
 * [@adrn](https://github.com/adrn/)
 * [@mwcraig](https://github.com/mwcraig/)
-
+* [@nstarman](https://github.com/nstarman/)
