@@ -10,7 +10,7 @@ source:
   sha256: 5bdbf68da55dc9ca17f79d0b03a60d74121e526796e389f44cc919bb0ed85ba0
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<310 or win]
   script: {{ PYTHON }} -m pip install --no-deps -vv .
 
@@ -34,7 +34,7 @@ requirements:
     - libpython  # [win]
   run:
     - python
-    - astropy
+    - astropy-base
     - gsl
     - pyyaml
     - scipy
