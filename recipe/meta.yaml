@@ -10,16 +10,15 @@ source:
   sha256: 5bdbf68da55dc9ca17f79d0b03a60d74121e526796e389f44cc919bb0ed85ba0
 
 build:
-  number: 2
-  skip: true  # [py<310 or win]
+  number: 3
+  skip: true  # [win]
   script: {{ PYTHON }} -m pip install --no-deps -vv .
 
 requirements:
   build:
-    - {{ compiler('c') }}  # [not win]
-    - {{ stdlib("c") }}    # [not win]
-    - {{ compiler('m2w64_c') }}  # [win]
-    - {{ stdlib("m2w64_c") }}    # [win]
+    # uses m2w64 toolchain on windows, see conda_build_config.yaml
+    - {{ stdlib("c") }}
+    - {{ compiler("c") }}
   host:
     - python
     - pip
@@ -31,7 +30,7 @@ requirements:
     - cython
     - packaging
     - m2w64-toolchain  # [win]
-    - libpython  # [win]
+    - distutils-activate-mingw  # [win]
   run:
     - python
     - astropy-base
