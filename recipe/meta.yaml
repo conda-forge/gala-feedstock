@@ -30,7 +30,7 @@ requirements:
     - cython
     - packaging
     - m2w64-toolchain  # [win]
-    - libpython  # [win]
+    - distutils-activate-mingw  # [win]
   run:
     - python
     - astropy-base
