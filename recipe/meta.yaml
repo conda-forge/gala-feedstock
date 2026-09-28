@@ -11,36 +11,32 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<310 or win]
-  script: {{ PYTHON }} -m pip install --no-deps -vv .
+  skip: true  # [py<312 or win]
+  script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation -vv .
 
 requirements:
   build:
-    - {{ compiler('c') }}  # [not win]
-    - {{ stdlib("c") }}    # [not win]
-    - {{ compiler('m2w64_c') }}  # [win]
-    - {{ stdlib("m2w64_c") }}    # [win]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
-    - setuptools
-    - setuptools_scm
+    - setuptools >=77.0.3
+    - setuptools-scm
+    - wheel
     - numpy >=2.0
-    - gsl
-    - extension-helpers
     - cython
-    - packaging
-    - m2w64-toolchain  # [win]
-    - libpython  # [win]
+    - pybind11
+    - gsl
   run:
     - python
-    - astropy-base
-    - gsl
+    - astropy-base >=7.0
+    - scipy >=1.15
     - pyyaml
-    - scipy
+    - gsl
     - packaging
     - {{ pin_compatible('numpy') }}
-    - m2w64-gcc-libs  # [win]
 
 test:
   requires:
